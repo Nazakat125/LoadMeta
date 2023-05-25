@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6bcdfd"
+        android:fontFamily="serif"
+        android:text="ALERT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Are you sure you want to delete this record?"
+        android:textAlignment="center"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:id="@+id/owner_delte_canncel"
+            android:layout_height="45dp"
+            android:text="Cancel"
+            android:textSize="20dp"
+            android:background="@drawable/sha"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:id="@+id/owner_delte_Delete"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="Delete"
+            android:background="@drawable/sha"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

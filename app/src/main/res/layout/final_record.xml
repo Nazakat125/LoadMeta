@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Records"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="#2196F3"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Fair"
+                android:background="@drawable/bgfordate"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Expense"
+                android:background="@drawable/bgfordate"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:id="@+id/fair_de"
+                android:background="@drawable/bgfordate"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="325667"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/totalFair"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="325667"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/totalExpence"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="325667"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/income"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalCheck"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="I confirm that the information provided is accurate"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/driver_cancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:backgroundTint="#2196F3"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/driver_share"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

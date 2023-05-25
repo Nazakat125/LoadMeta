@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6bcdfd"
+        android:fontFamily="serif"
+        android:text="Add Expense"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        app:boxStrokeColor="#000000"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/expenceDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detail"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="10"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        app:boxStrokeColor="#000000"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/expenceAm"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="10"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:id="@+id/expence_check"
+        android:layout_height="wrap_content"
+        android:text="Are you sure all the information in this record is correct"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:id="@+id/expenceCancel"
+            android:layout_height="45dp"
+            android:text="Cancel"
+            android:textSize="20dp"
+            android:background="@drawable/sha"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:id="@+id/expenceAdd"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="Add"
+            android:visibility="gone"
+            android:background="@drawable/sha"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

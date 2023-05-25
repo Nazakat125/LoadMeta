@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="false"
+    android:background="@color/white"
+    app:cardCornerRadius="30dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Vehicle"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        android:textSize="30sp"
+        android:padding="4dp"
+        android:textStyle="bold"
+
+        android:fontFamily="serif"
+        android:textAlignment="center" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle No"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        app:boxStrokeColor="#000000"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_baseline_time_to_leave_24"
+        app:startIconTint="#00B0FF"
+        app:endIconTint="#000000"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vehiclNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="10"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:hint="Vehicle Type"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        app:boxStrokeColor="#000000"
+        app:startIconDrawable="@drawable/ic_baseline_child_friendly_24"
+        app:startIconTint="#00B0FF"
+        app:endIconTint="#000000"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:hintTextColor="@color/black">
+
+        <AutoCompleteTextView
+            android:id="@+id/vehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        app:boxStrokeColor="#000000"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="#00B0FF"
+        app:endIconTint="#000000"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vehiclePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid OTP"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FB0000"
+        android:textSize="16dp"
+        android:fontFamily="serif"
+        android:id="@+id/vehicleExcetion"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addVehicleCancleBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FAB3"
+            android:fontFamily="serif"
+            android:text="Cancle"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold|italic" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addVehicleDoneBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FAB3"
+            android:fontFamily="serif"
+            android:text="Done"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

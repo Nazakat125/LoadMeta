@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".driver.home.driverHome">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/bgfordate"
+        android:fontFamily="serif"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="30dp"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:id="@+id/s_date"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:backgroundTint="#03A9F4"
+        android:padding="10dp"
+        android:text="Select"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/s_selected_date"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:text="15/07/2022"/>
+  </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/bgfordate"
+        android:fontFamily="serif"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+      <androidx.appcompat.widget.AppCompatButton
+          android:layout_width="wrap_content"
+          android:id="@+id/e_date"
+          android:textColor="#FFFFFF"
+          android:textStyle="bold"
+          android:fontFamily="serif"
+          android:textSize="20sp"
+          android:backgroundTint="#03A9F4"
+          android:padding="10dp"
+          android:text="Select"
+          android:layout_height="wrap_content"/>
+      <TextView
+          android:visibility="gone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:id="@+id/e_selected_date"
+          android:padding="10dp"
+          android:fontFamily="serif"
+          android:textSize="17sp"
+          android:textColor="@color/black"
+          android:layout_marginLeft="20dp"
+          android:text="15/07/2022"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#149EFF">
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Fair &amp; Expenses"
+          android:fontFamily="serif"
+          android:layout_gravity="center_vertical"
+          android:textSize="25dp"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          />
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        app:boxStrokeColor="#000000"
+        android:hint="Fair"
+        app:hintTextColor="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        >
+
+      <AutoCompleteTextView
+          android:id="@+id/fairandexpance"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:inputType="none"
+          android:maxLines="1"
+          android:textSize="18dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fair_con"
+        android:visibility="gone"
+        android:orientation="vertical">
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          app:boxBackgroundColor="#FFFFFF"
+          app:boxBackgroundMode="outline"
+          app:boxCornerRadiusBottomEnd="6dp"
+          app:boxCornerRadiusBottomStart="6dp"
+          app:boxCornerRadiusTopEnd="6dp"
+          app:boxCornerRadiusTopStart="6dp"
+          app:boxStrokeColor="#000000"
+          app:endIconMode="clear_text"
+          app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+          >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fair_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detail"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          android:layout_marginTop="10dp"
+          app:boxBackgroundColor="#FFFFFF"
+          app:boxBackgroundMode="outline"
+          app:boxCornerRadiusBottomEnd="6dp"
+          app:boxCornerRadiusBottomStart="6dp"
+          app:boxCornerRadiusTopEnd="6dp"
+          app:boxCornerRadiusTopStart="6dp"
+          app:boxStrokeColor="#000000"
+          app:endIconMode="clear_text"
+          app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+          >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/fair_amount"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:textSize="18dp"
+            android:maxLength="6"
+            android:inputType="number"
+            android:maxLines="1"
+
+            />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/fairAdd"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#00FAB3"
+          android:fontFamily="serif"
+          android:text="Add"
+          android:layout_marginTop="15dp"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:layout_gravity="center"
+          android:textStyle="bold|italic"
+       />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expence_con"
+        android:visibility="gone"
+        android:orientation="vertical">
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          app:boxBackgroundColor="#FFFFFF"
+          app:boxBackgroundMode="outline"
+          app:boxCornerRadiusBottomEnd="6dp"
+          app:boxCornerRadiusBottomStart="6dp"
+          app:boxCornerRadiusTopEnd="6dp"
+          android:hint="Detail"
+          app:boxCornerRadiusTopStart="6dp"
+          app:boxStrokeColor="#000000"
+          app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+          >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/e_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          app:boxBackgroundColor="#FFFFFF"
+          app:boxBackgroundMode="outline"
+          app:boxCornerRadiusBottomEnd="6dp"
+          app:boxCornerRadiusBottomStart="6dp"
+          app:boxCornerRadiusTopEnd="6dp"
+          app:boxCornerRadiusTopStart="6dp"
+          app:boxStrokeColor="#000000"
+          app:endIconMode="clear_text"
+          app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+          >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/expence_amount"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:textSize="18dp"
+            android:maxLength="6"
+            android:inputType="number"
+            android:maxLines="1"
+
+            />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/expanceAddBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#00FAB3"
+          android:fontFamily="serif"
+          android:text="Add"
+          android:layout_marginTop="15dp"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:layout_gravity="center"
+          android:textStyle="bold|italic"
+          />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/fair_list"
+        android:visibility="gone">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Fair Records"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          android:background="#03A9F4"
+          android:textSize="24dp"
+          android:padding="3dp"
+          android:textStyle="bold"
+          android:fontFamily="serif"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"/>
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:layout_marginBottom="5dp"
+          app:cardCornerRadius="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/fair_records"
+            android:id="@+id/fair_recyView"/>
+      </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/expence_list"
+        android:visibility="gone">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Expence Records"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          android:background="#03A9F4"
+          android:textSize="24dp"
+          android:padding="3dp"
+          android:textStyle="bold"
+          android:fontFamily="serif"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"/>
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:layout_marginBottom="5dp"
+          app:cardCornerRadius="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/fair_records"
+            android:id="@+id/expence_recyView"/>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="DONE"
+        android:fontFamily="serif"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:padding="9dp"
+        android:textStyle="bold"
+        android:id="@+id/recordDone"/>
+  </LinearLayout>
+
+
+</ScrollView>

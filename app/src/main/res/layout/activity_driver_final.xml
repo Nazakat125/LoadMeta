@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".owner.driverFinal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/driverImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/personavtar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_na"
+            android:text="Nazakat Hussain"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/O"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoukat Hussain"
+            android:textSize="20dp"
+            android:id="@+id/driver_father"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information:"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:textSize="23dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="serif"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driver Type"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CNIC"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seniour Driver"
+                        android:textSize="17dp"
+                        android:id="@+id/driver_type"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03117213630"
+                        android:textSize="17dp"
+                        android:id="@+id/driver_num"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3820123107483"
+                        android:textSize="17dp"
+                        android:id="@+id/driver_cnic"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25"
+                        android:textSize="17dp"
+                        android:id="@+id/driver_age"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khushab"
+                        android:textSize="15dp"
+                        android:id="@+id/driver_city"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Post Office Joyia Khusahab"
+                        android:textSize="15dp"
+                        android:id="@+id/driver_address"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience:"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:textSize="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="serif"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Experience"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lisence"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7 year"
+                        android:textSize="17dp"
+                        android:id="@+id/driver_experience"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="null"
+                        android:textSize="17dp"
+                        android:id="@+id/driver_lisence"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="5dp"/>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

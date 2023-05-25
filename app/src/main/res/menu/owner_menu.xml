@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    >
+    <item
+        android:id="@+id/owner_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="#1E88E5"/>
+
+    <item
+        android:id="@+id/owner_kahta"
+        android:title="Khatta"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:iconTint="#1E88E5"/>
+
+
+    <item
+        android:id="@+id/owner_map"
+        android:title="Map"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:iconTint="#1E88E5"/>
+
+    <item
+        android:id="@+id/owner_messages"
+        android:title="Message"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:iconTint="#1E88E5"/>
+   <item android:title="Manage Vehicle">
+       <menu>
+           <item
+               android:id="@+id/driver_cv"
+               android:title="Driver"
+               android:icon="@drawable/ic_baseline_person_24"
+               android:iconTint="#1E88E5"/>
+           <item
+               android:id="@+id/vehicle_reocrds"
+               android:title="Vehicle Records"
+               android:icon="@drawable/ic_baseline_topic_24"
+               android:iconTint="#1E88E5"/>
+           <item
+               android:id="@+id/vehicle_ch_Passwords"
+               android:title="Change Password"
+               android:icon="@drawable/ic_baseline_key_24"
+               android:iconTint="#1E88E5"/>
+           <item
+               android:id="@+id/delete_vehicle"
+               android:title="Delete Vehicle"
+               android:icon="@drawable/ic_baseline_drive_eta_24"
+               android:iconTint="#1E88E5"/>
+       </menu>
+   </item>
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/ch_password"
+                android:title="Change Password"
+                android:icon="@drawable/ic_baseline_key_24"
+                android:iconTint="#1E88E5"/>
+            <item
+                android:id="@+id/del_Account"
+                android:title="Delete Account"
+                android:icon="@drawable/ic_baseline_person_pin_24"
+                android:iconTint="#1E88E5"/>
+
+            <item
+                android:id="@+id/logout"
+                android:title="Log Out"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:iconTint="#1E88E5"/>
+        </menu>
+    </item>
+</menu>
